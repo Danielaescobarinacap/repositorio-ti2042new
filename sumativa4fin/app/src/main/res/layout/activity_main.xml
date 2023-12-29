@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/tvStatusAndHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Status and Humidity"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/ivGreenIndicator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvStatusAndHumidity"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/green_indicator"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/ivYellowIndicator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ivGreenIndicator"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/yellow_indicator"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/ivRedIndicator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ivYellowIndicator"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/red_indicator"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivRedIndicator"
+        android:layout_marginTop="24dp"
+        android:text="Turn Off"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnHumidifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOff"
+        android:layout_marginTop="16dp"
+        android:text="Humidify"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnDehumidifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHumidifier"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="293dp"
+        android:text="Dehumidify" />
+
+</RelativeLayout>
